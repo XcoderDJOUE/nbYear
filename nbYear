@@ -1,0 +1,8 @@
+function nbYear(days=0){
+  var years, month, day;
+  years = days/365;
+  month = ((days % 365)/30);
+  day = ((days % 365) % 30);
+    var retu = {'days': Math.floor(day), 'month': Math.floor(month), 'years': Math.floor(years)};
+    return retu;
+}
